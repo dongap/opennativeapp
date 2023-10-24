@@ -38,10 +38,11 @@
             <EditText
                 android:id="@+id/eidFirstName"
                 style="@style/FormEditText"
-                android:hint="Name"
+                android:hint="First Value"
                 android:textColorHint="#A6A6A6"
                 android:imeOptions="actionDone"
                 android:lines="1"
+                android:inputType="number"
                 tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         </RelativeLayout>
@@ -62,45 +63,88 @@
             <EditText
                 android:id="@+id/eidLastName"
                 style="@style/FormEditText"
-                android:hint="Mobile Number"
+                android:hint="Second Value"
                 android:textColorHint="#A6A6A6"
                 android:imeOptions="actionDone"
                 android:lines="1"
+                android:inputType="number"
                 tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         </RelativeLayout>
 
-        <!--Email-->
-        <RelativeLayout
-            android:id="@+id/errorEmail"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:layout_marginHorizontal="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_10sdp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            android:layout_marginTop="@dimen/_10sdp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Total :- "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp" />
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp" />
 
-            <!--this is the actual edit text which takes the input-->
-            <EditText
-                android:id="@+id/eidEmail"
-                style="@style/FormEditText"
-                android:hint="E-mail"
-                android:textColorHint="#A6A6A6"
-                android:imeOptions="actionDone"
-                android:lines="1"
-                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
 
-        </RelativeLayout>
+<!--        Email-->
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/errorEmail"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="@dimen/_10sdp"-->
+<!--            android:layout_marginTop="@dimen/_10sdp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent">-->
+
+<!--            &lt;!&ndash;this is the actual edit text which takes the input&ndash;&gt;-->
+<!--            <EditText-->
+<!--                android:id="@+id/eidEmail"-->
+<!--                style="@style/FormEditText"-->
+<!--                android:hint="E-mail"-->
+<!--                android:textColorHint="#A6A6A6"-->
+<!--                android:imeOptions="actionDone"-->
+<!--                android:lines="1"-->
+<!--                android:inputType="number"-->
+<!--                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />-->
+
+<!--        </RelativeLayout>-->
 
         <TextView
-            android:id="@+id/textContinue"
-            style="@style/bottom_button"
+            android:id="@+id/textAddition"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/sbold"
+            android:textColor="@color/theme_bold_color"
+            android:paddingVertical="@dimen/_9sdp"
+            android:background="@drawable/background_cancel"
             android:layout_alignParentBottom="true"
             android:layout_marginHorizontal="@dimen/_13sdp"
             android:layout_marginTop="@dimen/_20sdp"
-            android:text="save" />
+            android:text="Total Addition" />
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/textSubtraction"-->
+<!--            style="@style/bottom_button"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginHorizontal="@dimen/_13sdp"-->
+<!--            android:layout_marginTop="@dimen/_20sdp"-->
+<!--            android:text="subtraction" />-->
 
         <TextView
             android:id="@+id/textCancel"
@@ -115,7 +159,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginHorizontal="@dimen/_13sdp"
             android:layout_marginTop="@dimen/_20sdp"
-            android:text="cancel" />
+            android:text="Total Subtraction" />
 
     </LinearLayout>
 

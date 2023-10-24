@@ -1,14 +1,13 @@
 name: openappnapp
 description: A new Flutter native project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/dongap/opennativeapp.git
 
 environment:
   sdk: '>=2.18.2 <3.0.0'
   flutter: ">=2.5.0"
 
 dependencies:
-  firebase_core: ^2.15.1
   flutter:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
