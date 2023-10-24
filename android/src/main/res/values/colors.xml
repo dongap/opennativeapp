@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="one_payu_colorPrimary">@color/theme_color</color>
+    <color name="one_payu_colorPrimaryDark">@color/theme_color</color>
+    <color name="one_payu_colorAccent">@color/theme_color</color>
+    <color name="one_payu_baseTextColor">#ffffff</color>
+
+    <color name="purple_200">@color/theme_color</color>
+    <color name="purple_500">@color/theme_color</color>
+    <color name="purple_700">@color/theme_color</color>
+    <color name="teal_200">@color/theme_color</color>
+    <color name="teal_700">@color/theme_color</color>
+    <color name="black">#FF000000</color>
+    <color name="black_1">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="c_00120A">#00120A</color>
+    <color name="c_e1e1e1">#e1e1e1</color>
+    <color name="c_35ab33">#35AB33</color>
+    <color name="c_717883">#717883</color>
+    <color name="c_b7bac0">#b7bac0</color>
+    <color name="c_C8C8C8">#C8C8C8</color>
+    <color name="c_E3E3E3">#E3E3E3</color>
+
+    <color name="theme_color">#21B8F3</color>
+    <color name="theme_bold_color">#2196F3</color>
+
+    <color name="c_4aaa48">#4AAA48</color>
+    <color name="green">#4AAA48</color>
+
+</resources>
